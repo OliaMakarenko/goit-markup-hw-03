@@ -1,0 +1,258 @@
+:root {
+  /* fonts */
+  --main-font: "Roboto";
+  --secondary-font: "Raleway";
+
+  /* text colors */
+  --main-txt-cl: #757575;
+  --secondary-txt-cl: #212121;
+  --dark-txt-cl: #000000;
+  --white-txt-cl: #ffffff;
+  --accent-txt-cl: #2196f3;
+
+  /* bg colors */
+  --main-bg-cl: #ffffff;
+  --grey-bg-cl: #f5f4fa;
+  --dark-bg-cl: #2f303a;
+  --btn-cl: #2196f3;
+  --btn-active-cl: #188ce8;
+}
+
+/* body */
+body {
+  font-family: var(--main-font), sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--main-txt-cl);
+  letter-spacing: 0.03em;
+}
+
+/* common styles start */
+
+/* various common styles */
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.current-link {
+  color: var(--accent-txt-cl);
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--secondary-txt-cl);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-bg-cl {
+  background-color: var(--main-bg-cl);
+
+  /*  common header*/
+}
+.logo-header {
+  font-family: var(--secondary-font), sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--dark-txt-cl);
+}
+
+.logo-header-accent {
+  color: var(--accent-txt-cl);
+}
+
+.header-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-txt-cl);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-txt-cl);
+}
+
+.header-contacts {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
+}
+
+.header-contacts:hover,
+.header-contacts:focus {
+  color: var(--accent-txt-cl);
+}
+
+.current-link {
+  color: var(--accent-txt-cl);
+}
+
+/* common footer */
+
+.footer {
+  background-color: #2f303a;
+}
+
+.logo-footer {
+  font-family: var(--secondary-font), sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--white-txt-cl);
+}
+.logo-footer-accent {
+  color: var(--accent-txt-cl);
+}
+.address {
+  font-style: normal;
+}
+
+.address-link {
+  color: var(--white-txt-cl);
+}
+
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--accent-txt-cl);
+}
+
+/* index.html */
+
+/*  section hero*/
+.hero {
+  background-color: var(--dark-bg-cl);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-txt-cl);
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-txt-cl);
+
+  background-color: var(--btn-cl);
+
+  cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--btn-active-cl);
+}
+
+/* section features */
+
+.features-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.14;
+  color: var(--secondary-txt-cl);
+}
+
+/* section about */
+
+/* section team */
+.team {
+  background-color: var(--grey-bg-cl);
+}
+
+.team-member-card {
+  background-color: var(--main-bg-cl);
+}
+
+.team-member-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--secondary-txt-cl);
+}
+
+.team-member-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--main-txt-cl);
+}
+
+/* portfolio.html */
+
+/* work examples */
+
+.btn-wrk-exmpl {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--secondary-txt-cl);
+  background-color: var(--grey-bg-cl);
+  cursor: pointer;
+}
+
+.btn-wrk-exmpl:hover,
+.btn-wrk-exmpl:focus {
+  color: var(--white-txt-cl);
+  background-color: var(--btn-cl);
+}
+
+.active-btn {
+  color: var(--white-txt-cl);
+  background-color: var(--btn-cl);
+}
+
+.container-wrk-exmpl {
+  background-color: var(--main-bg-cl);
+}
+
+.title-wrk-exmpl {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-txt-cl);
+}
+
+.desc-wrk-exmpl {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--main-txt-cl);
+}
