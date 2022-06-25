@@ -29,6 +29,8 @@ body {
   line-height: 1.71;
   color: var(--main-txt-cl);
   letter-spacing: 0.03em;
+
+  background-color: var(--main-bg-cl);
 }
 
 /* reset */
@@ -98,10 +100,6 @@ img {
   overflow: hidden;
 }
 
-.main-bg-cl {
-  background-color: var(--main-bg-cl);
-}
-
 .card-set {
   display: flex;
   flex-wrap: wrap;
@@ -160,8 +158,8 @@ img {
 
 .header-link {
   display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   font-weight: 500;
   line-height: 1.14;
@@ -175,10 +173,14 @@ img {
 }
 
 .header-contacts-item:not(:last-child) {
-  padding-right: 50px;
+  margin-right: 50px;
 }
 
 .header-contacts {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -242,15 +244,13 @@ img {
 
 /*  section hero*/
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: var(--dark-bg-cl);
 }
 
-.hero-container {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-.hero-title {
+.hero-container .hero-title {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -296,10 +296,6 @@ img {
 
 /* section features */
 
-.features {
-  padding-bottom: 0;
-}
-
 .features-title {
   margin-bottom: 10px;
   font-size: 14px;
@@ -309,6 +305,9 @@ img {
 }
 
 /* section about */
+.about {
+  padding-top: 0;
+}
 .about-list {
   --items: 3;
 }
@@ -357,7 +356,7 @@ img {
   display: flex;
   justify-content: center;
 
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .button-item {
